@@ -22,8 +22,8 @@ VS Code	- Code editor of choice
 
 **HOW TO RUN?
  Clone the Repository : 
-       git clone https://github.com/yourusername/dribbble-ui.git
-       cd dribbble-ui
+       git clone https://github.com/VibhooshanaKannan/dribble-ui.git
+       cd dribble-ui
  Install Dependencies
        npm install
  Run the Dev Server
