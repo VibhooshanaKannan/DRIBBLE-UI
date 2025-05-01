@@ -1,0 +1,315 @@
+/* styles/Home.module.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333;
+    text-align: center;
+  }
+  
+  .mainHeading {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #111;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .subHeading {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 4rem;
+    font-weight: 400;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+  }
+  
+  .boxContainer {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    background-color: #f0fbf8;
+    border-radius: 24px;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    width: 300px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .card h2 {
+    color: #111;
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+    align-items: center;
+  }
+  
+  .card p {
+    color: #555;
+    font-size: 1rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  .card ul {
+    padding-left: 1.2rem;
+    list-style-type: none;
+    color:black;
+    margin-top: auto;
+  }
+  
+  .card ul li {
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1.2rem;
+  }
+  
+  .card ul li:before {
+    content: "•";
+    color: rgb(219, 67, 92);
+    position: absolute;
+    left: 0;
+  }
+  
+  .priceFree {
+    color: #000;
+    font-weight: 800;
+    font-size: 3.5rem;
+    margin: 1rem 0 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .priceBasic {
+    color: #000;
+    font-weight: 800;
+    font-size: 3.5rem;
+    margin: 1rem 0 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .priceBasic:after, 
+  .pricePremium:after {
+    content: "/month";
+    font-size: 1.2rem;
+    color: #666;
+    margin-left: 0.25rem;
+    font-weight: 400;
+  }
+  
+  .pricePremium {
+    color: #000;
+    font-weight: 800;
+    font-size: 3.5rem;
+    margin: 1rem 0 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .mediaSection,
+  .mediaSectionReverse {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin: 6rem 0;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  
+  .mediaSectionReverse {
+    flex-direction: row-reverse;
+  }
+  
+  .mediaSection h2,
+  .mediaSectionReverse h2 {
+    color: #111;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  
+  .mediaSection p,
+  .mediaSectionReverse p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .mediaSection > div,
+  .mediaSectionReverse > div {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .image {
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .finalBanner {
+    margin-top: 6rem;
+    text-align: center;
+    padding: 3rem;
+    border-radius: 24px;
+  }
+  
+  .finalBanner h2 {
+    color: #111;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .finalBanner p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Button stylings */
+  .card a,
+  .findDesignerBtn,
+  .postJobBtn,
+  .getStartedBtn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  .findDesignerBtn {
+    background-color: #0c0e1d;
+    color: white;
+  }
+  
+  .postJobBtn {
+    background-color: #0c0e1d;
+    color: white;
+  }
+  
+  .getStartedBtn {
+    background-color: #f05b91;
+    color: white;
+  }
+  
+  .findDesignerBtn:hover,
+  .postJobBtn:hover {
+    background-color: #1a1e3a;
+  }
+  
+  .getStartedBtn:hover {
+    background-color: #e64980;
+  }
+  
+  /* New tag */
+  .newTag {
+    background-color: #f05b91;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  /* Designer profile cards */
+  .designerCard {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .designerAvatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .designerInfo {
+    flex: 1;
+  }
+  
+  .proTag {
+    background-color: #000;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .locationTag,
+  .skillTag,
+  .rateTag {
+    background-color: #f4f5f0;
+    color: #555;
+    font-size: 0.8rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .mainHeading {
+      font-size: 2.5rem;
+    }
+    
+    .boxContainer {
+      padding: 1rem;
+    }
+    
+    .mediaSection,
+    .mediaSectionReverse {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    
+    .card {
+      width: 100%;
+    }
+  }

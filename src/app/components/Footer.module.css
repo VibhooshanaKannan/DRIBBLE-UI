@@ -1,0 +1,167 @@
+/* components/Footer.module.css */
+.footer {
+  background-color: #fff;
+  padding-top: 2.3rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: #1a1a1a;
+  flex-direction: column;
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .leftSection {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+}
+
+.logoLink {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .logoLink {
+    margin-bottom: 0;
+  }
+}
+
+.mainNav {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .mainNav {
+    margin: 0;
+  }
+}
+
+.navLink {
+  margin-right: 1.5rem;
+  text-decoration: none;
+  color: #111827;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: black;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .socialIcons {
+    margin-top: 0;
+  }
+}
+
+.socialIcons a {
+  color: inherit;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.bottomSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px solid #f3f4f6;
+  padding-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .bottomSection {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+  }
+}
+
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    margin-bottom: 0;
+  }
+}
+
+.copyright span {
+  margin-right: 1rem;
+}
+
+.link {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.rightLinks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rightLinks .link {
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Specific hover colors for social icons */
+.socialIcons a:hover [class*="FaTwitter"] {
+  color: #1d9bf0;
+}
+
+.socialIcons a:hover [class*="FaFacebookF"] {
+  color: #1877f2;
+}
+
+.socialIcons a:hover [class*="FaInstagram"] {
+  color: #e1306c;
+}
+
+.socialIcons a:hover [class*="FaPinterestP"] {
+  color: #e60023;
+}

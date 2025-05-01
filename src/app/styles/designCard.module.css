@@ -1,0 +1,137 @@
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .imageContainer {
+    position: relative;
+    width: 100%;
+    padding-top: 75%; /* 4:3 aspect ratio */
+    background-color: #f3f3f4;
+    overflow: hidden;
+  }
+  
+  .image {
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover .image {
+    transform: scale(1.05);
+  }
+  
+  .cardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+  }
+  
+  .authorInfo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .avatarContainer {
+    margin-right: 8px;
+  }
+  
+  .avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #ea4c89;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .authorDetails {
+    display: flex;
+    align-items: center;
+  }
+  
+  .authorName {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0d0c22;
+    text-decoration: none;
+    margin-right: 8px;
+  }
+  
+  .authorName:hover {
+    color: #ea4c89;
+  }
+  
+  .badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  .teamBadge {
+    background-color: #f8f7f4;
+    color: #6e6d7a;
+  }
+  
+  .proBadge {
+    background-color: #f8f7f4;
+    color: #ea4c89;
+  }
+  
+  .stats {
+    display: flex;
+    align-items: center;
+  }
+  
+  .likeButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+    color: #6e6d7a;
+    font-size: 12px;
+  }
+  
+  .likeButton:hover {
+    color: #ea4c89;
+  }
+  
+  .likeButton:hover .heartIcon {
+    stroke: #ea4c89;
+  }
+  
+  .heartIcon {
+    margin-right: 4px;
+    stroke: #6e6d7a;
+  }
+  
+  .viewCount {
+    display: flex;
+    align-items: center;
+    color: #6e6d7a;
+    font-size: 12px;
+  }
+  
+  .eyeIcon {
+    margin-right: 4px;
+    stroke: #6e6d7a;
+  }
+  

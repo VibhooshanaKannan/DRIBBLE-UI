@@ -1,0 +1,260 @@
+/* styles/navbar.css */
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+@font-face {
+  font-family: 'Mona Sans';
+  font-stretch: 75% 125%;
+  font-weight: 200 900;
+  src: url(/assets/mona-sans/Mona-Sans-870dff5a10221ba7d01cc47eca10d0b2f911bd4196bb941985490bd8c7363cd9.woff2) format("woff2 supports variations"),
+       url(/assets/mona-sans/Mona-Sans-870dff5a10221ba7d01cc47eca10d0b2f911bd4196bb941985490bd8c7363cd9.woff2) format("woff2-variations");
+}
+
+.navbar {
+  width: 100%;
+  border-bottom: 1px solid #e7e7e9;
+  padding: 14px 0;
+  background-color: white;
+  font-family: 'Mona Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.auth-button {
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.signup-button {
+  background-color: #0d0c22;
+  color: #ffffff;
+}
+
+.signup-button:hover {
+  background-color: #33324c;
+}
+
+.login-button {
+  background-color: transparent;
+  color: #0d0c22;
+  border: 1px solid #0d0c22;
+}
+
+.login-button:hover {
+  background-color: #f2f2f2;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 32px;
+}
+
+/* Center section with search and navigation */
+.navbar-center {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+  margin: 0 30px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f4;
+  border-radius: 8px;
+  padding: 6px 12px;
+  margin-right: 20px;
+  width: 450px;
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  padding: 8px;
+  flex-grow: 1;
+  font-size: 14px;
+  outline: none;
+  font-family: 'Mona Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.shots-dropdown {
+  position: relative;
+}
+
+.shots-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-family: 'Mona Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.dropdown-arrow {
+  font-size: 10px;
+  margin-left: 4px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 100;
+  min-width: 180px;
+  margin-top: 10px;
+}
+
+.dropdown-item {
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: 'Mona Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.dropdown-item:hover {
+  background-color: #f3f3f4;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-family: 'Mona Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.nav-item.dropdown {
+  display: flex;
+  align-items: center;
+}
+
+/* Right section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  margin: 0 4px;
+  font-size: 18px;
+}
+
+.pro-button {
+  background-color: #0d0c22;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 16px;
+  font-family: 'Mona Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f0f0f0;
+}
+
+.search-button {
+  background-color: rgb(223, 108, 146); /* or any cursed color ye want */
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.2s ease;
+}
+
+.search-button:hover {
+  background-color: #e0e0e0;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  padding: 0.5rem 0;
+  border-radius: 8px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}

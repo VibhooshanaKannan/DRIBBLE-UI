@@ -1,0 +1,462 @@
+.heroSection {
+  background-color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+@media (min-width: 768px) {
+  .heroSection {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.leftSection {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .leftSection {
+    width: 50%;
+    text-align: left;
+    margin-bottom: 0;
+    padding-right: 32px;
+  }
+}
+
+.forDesigners {
+  color: palevioletred; /* Tailwind's purple-500 */
+  font-size: 0.875rem; /* Tailwind's text-sm */
+  font-weight: 600; /* Tailwind's font-semibold */
+  letter-spacing: 0.2em; /* Tailwind's tracking-wider */
+  margin-bottom: 1px; /* Tailwind's mb-2 */
+  text-transform: uppercase;
+}
+
+.mainHeading {
+  font-size: 2.25rem; /* Tailwind's text-4xl */
+  line-height: 1.25;
+  font-weight: 700; /* Tailwind's font-bold */
+  color: #1e293b; /* Tailwind's gray-900 */
+  margin-bottom: 16px; /* Tailwind's mb-4 */
+}
+
+@media (min-width: 768px) {
+  .mainHeading {
+    font-size: 3rem; /* Tailwind's md:text-5xl */
+  }
+}
+
+.subText {
+  font-size: 1.125rem; /* Tailwind's text-lg */
+  line-height: 1.5;
+  color: #4b5563; /* Tailwind's gray-700 */
+  margin-bottom: 24px; /* Tailwind's mb-6 */
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px; /* Tailwind's space-y-4 */
+}
+
+@media (min-width: 768px) {
+  .buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 16px; /* Tailwind's md:space-x-4 */
+  }
+}
+
+.createProfileButton {
+  background-color: #1e293b; /* Tailwind's gray-900 */
+  color: #fff;
+  font-weight: 600; /* Tailwind's font-semibold */
+  padding: 12px 24px; /* Approximation of Tailwind's py-3 px-6 */
+  border-radius: 9999px; /* Tailwind's rounded-full */
+  text-decoration: none;
+}
+
+.createProfileButton:hover {
+  background-color: #374151; /* Darker shade of gray-900 */
+}
+
+.hiringDesignersLink {
+  color: #a855f7; /* Tailwind's purple-500 */
+  font-weight: 600; /* Tailwind's font-semibold */
+  text-decoration: none;
+}
+
+.hiringDesignersLink:hover {
+  color: #9333ea; /* Darker shade of purple-500 */
+}
+
+.rightSection {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .rightSection {
+    width: 50%;
+  }
+}
+
+.communityImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem; /* Tailwind's rounded-lg */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Tailwind's shadow-md */
+}
+.infoHeading {
+  font-size: 28px;
+  max-width: 800px;
+  margin-top: 40px;
+  font-weight: 700;
+  color: #0d0c22;
+  margin-bottom: 12px; /* Ensures space below heading */
+  display: block; /* Ensures it's a block element */
+}
+
+.infoText {
+  font-size: 20px;
+  color: #6e6d7a;
+  max-width: 800px;
+  margin-top: 70px;
+  line-height: 1.9;
+  display: block; /* Optional, ensures it's on its own line */
+}
+.testimonialSection {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.testimonialContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.testimonialImageWrapper {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.testimonialImage {
+  width: 480px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.playButtonOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.testimonialContent {
+  max-width: 600px;
+}
+
+.quote {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e1e1e;
+  margin-bottom: 24px;
+}
+
+.author {
+  font-size: 16px;
+  color: #555;
+}
+
+.role {
+  color: #999;
+}
+
+.watchButton {
+  margin-top: 20px;
+  background: transparent;
+  border: 2px solid #000;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.watchButton:hover {
+  background: #000;
+  color: #fff;
+}
+
+.buttonIcon {
+  fill: white;
+}
+.portfolioSection {
+  margin-top: 40px;
+  padding: 30px 0;
+}
+
+.portfolioContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.portfolioMedia {
+  width: 650px;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+.portfolioContent {
+  max-width: 480px;
+}
+
+.portfolioHeading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2e2e2e;
+  margin-bottom: 16px;
+}
+
+.portfolioText {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.portfolioButton {
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.portfolioButton:hover {
+  background: #000;
+  color: #fff;
+}
+
+.portfolioSection1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.portfolioContainer1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.portfolioContent1 {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.portfolioHeading1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.portfolioText1 {
+  line-height: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.portfolioButton1 {
+  padding: 0.75rem 1.5rem;
+  color: black;
+  font-weight: 600;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+  font-size: 1rem;
+}
+
+.portfolioVideoWrapper1 {
+  background: linear-gradient(90deg, #FFEDD5 0%, #FDD692 100%);
+  padding: 20px;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.portfolioMedia1 {
+  border-radius: 24px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .portfolioContainer1 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .portfolioContent1 {
+    width: 50%;
+    text-align: left;
+    padding-right: 20px;
+  }
+
+  .portfolioVideoWrapper1 {
+    width: 50%;
+  }
+}
+.exploreSection {
+  padding: 40px;
+  text-align: center;
+}
+
+.exploreSubheading {
+  font-size: 20px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.exploreHeading {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.boxContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.boxViolet {
+  background: linear-gradient(135deg, rgb(217, 205, 217), rgb(228, 208, 228));
+  color:white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: left;
+}
+
+.boxGreen {
+  background-color: #bedcbf;
+  color:white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: left;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.hoverPink:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/* New Section Styles */
+.brandSection {
+  background: linear-gradient(135deg, #dfced8, #e3aad0);
+  padding: 50px;
+  margin-left: -100px;
+  max-width:1000vh;
+  margin-right: -100px;
+  text-align: center;
+  margin-top: 100px;
+  height: 400px;
+
+}
+
+.brandHeading {
+  font-size: 2.4em;
+  color: black ;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+}
+
+.getStartedButton {
+  background-color:black;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  margin-top: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.getStartedButton:hover {
+  background-color:black;
+}
+
+.quote {
+  font-size: 16px;
+margin-top: 60px;
+  color:black ;
+}

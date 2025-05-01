@@ -1,0 +1,46 @@
+.galleryWrapper {
+    overflow: hidden;
+    padding: 20px 0;
+  }
+  
+  .row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+  }
+  
+  .imageWrapper {
+    flex: 0 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .scrollLeftToRight {
+    animation-name: scrollLTR;
+  }
+  
+  .scrollRightToLeft {
+    animation-name: scrollRTL;
+  }
+  
+  @keyframes scrollLTR {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  @keyframes scrollRTL {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
